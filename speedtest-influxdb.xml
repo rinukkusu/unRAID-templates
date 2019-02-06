@@ -1,7 +1,7 @@
 
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>Alternative Speedtest2InfluxDB</Name>
+    <Name>AlternativeSpeedtest2InfluxDB</Name>
     <Repository>rinukkusu/speedtest-influxdb</Repository>
     <Registry>https://cloud.docker.com/u/rinukkusu/repository/docker/rinukkusu/speedtest-influxdb</Registry>
     <Network>bridge</Network>
