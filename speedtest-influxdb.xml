@@ -1,0 +1,55 @@
+
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>Alternative Speedtest2InfluxDB</Name>
+    <Repository>rinukkusu/speedtest-influxdb</Repository>
+    <Registry>https://cloud.docker.com/u/rinukkusu/repository/docker/rinukkusu/speedtest-influxdb</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/rinukkusu/speedtest/issues</Support>
+    <Project>https://github.com/rinukkusu/speedtest</Project>
+    <Overview>A speedtest docker container that forwards the data to influxDB.</Overview>
+    <Category>Cloud: Network:Web</Category>
+    <WebUI/>
+    <TemplateURL>https://github.com/rinukkusu/unRAID-templates</TemplateURL>
+    <Icon/>
+    <ExtraParams/>
+    <PostArgs/>
+    <CPUset/>
+    <DateInstalled>1549461091</DateInstalled>
+    <DonateText/>
+    <DonateLink/>
+    <Description>A speedtest docker container that forwards the data to influxDB.</Description>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish/>
+    </Networking>
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/appdata/speedtest-influxdb/config.ini</HostDir>
+            <ContainerDir>/src/config.ini</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <Environment>
+        <Variable>
+            <Name>INFLUXDB_URL</Name>
+            <Value>http://localhost:8086</Value>
+        </Variable>
+        <Variable>
+            <Name>INFLUXDB_USERNAME</Name>
+            <Value>root</Value>
+        </Variable>
+        <Variable>
+            <Name>INFLUXDB_PASSWORD</Name>
+            <Value>root</Value>
+        </Variable>
+        <Variable>
+            <Name>SPEEDTEST_SOURCE</Name>
+            <Value>hetzner</Value>
+        </Variable>
+    </Environment>
+    <Labels/>
+</Container>
